@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SuperMiie">
+    <meta name="author" content="M.Rofik">
+    <title>Form Tanda Terima | by M.Rofik</title>
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <script src="../js/input.js"></script>
+</head>
+<body>
+    <!--Content Pages-->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card card-primary mt-3">
+                <div class="card-header">
+                    <h3 class="card-title">Form Tanda Terima</h3>
+                    <div class="input-group w-25 float-right">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">No._ :</span>
+                        </div>
+                        <input type="number" id="uniqueNumber" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="../img/image.png" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <h5><i class="icon fas fa-ban"></i> Alert!</h5>
+                                Untuk keperluan data, harap isi semua bidang yang sudah disiapkan!!!
+                            </div>
+                            <form id="inputForm">
+                                <div class="form-group">
+                                    <label>Dibuat oleh :</label>
+                                    <input type="text" class="form-control" name="create" placeholder="Pembuat..." autofocus required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Diterima dari :</label>
+                                    <input type="text" class="form-control" name="dari" placeholder="Nama dan nomer telephone customer..." required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Berupa :</label>
+                                    <input type="text" class="form-control" name="berupa" placeholder="Sebutkan apa yang diterima, Contoh : DP Rp. 500.000 Cash" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nama Toko :</label>
+                                    <input type="text" class="form-control" name="toko" value="ASUS STORE MALL CIPUTRA 0899-3061-900 (Whatsapp)" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Untuk keperluan :</label>
+                                    <textarea rows="4" class="form-control" name="untuk" placeholder="Deskripsikan keperluanya, Contoh : Untuk pemesanan unit Laptop Asus UX5406SA" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Input Data</button>
+                                <button type="reset" class="btn btn-secondary">Reset Data</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
