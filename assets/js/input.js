@@ -65,7 +65,6 @@ function generateNumber() {
         countRequest.onsuccess = function() {
             let sequence = ('000' + (countRequest.result + 1)).slice(-4);
             let generatedNumber = day + month + year + sequence;
-            console.log("Generated Number:", generatedNumber);
             resolve(generatedNumber);
         };
         };
